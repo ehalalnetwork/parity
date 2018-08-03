@@ -73,6 +73,8 @@ extern crate keccak_hash as hash;
 extern crate journaldb;
 extern crate registrar;
 
+extern crate hydrabadger;
+
 #[macro_use]
 extern crate log as rlog;
 
