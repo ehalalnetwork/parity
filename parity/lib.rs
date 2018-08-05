@@ -115,6 +115,7 @@ mod upgrade;
 mod user_defaults;
 mod whisper;
 mod db;
+mod hbbft;
 
 use std::io::BufReader;
 use std::fs::File;
