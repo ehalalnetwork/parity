@@ -8,6 +8,7 @@ variables:
   CARGOFLAGS: ""
   CI_SERVER_NAME: "GitLab CI"
   CI_COMMIT_REF_NAME: "master"
+  CI_BUILD_REF_NAME: "master"
 cache:
   key: "$CI_BUILD_STAGE-$CI_BUILD_REF_NAME"
   paths:
