@@ -170,6 +170,7 @@ docker-build:
   only:
     - tags
     - master
+    - tests-runner
     - beta
     - stable
     - triggers
@@ -187,6 +188,7 @@ test-coverage:
   stage: test
   only:
     - master
+    - tests-runner
   script:
     - scripts/gitlab-test.sh test-coverage
   tags:
@@ -204,6 +206,7 @@ test-rust-beta:
   only:
     - triggers
     - master
+    - tests-runner
   image: parity/rust:gitlab-ci
   script:
     - scripts/gitlab-test.sh beta
@@ -215,6 +218,7 @@ test-rust-nightly:
   only:
     - triggers
     - master
+    - tests-runner
   image: parity/rust:gitlab-ci
   script:
     - scripts/gitlab-test.sh nightly
