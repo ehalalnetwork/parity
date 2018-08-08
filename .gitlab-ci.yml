@@ -188,7 +188,6 @@ test-coverage:
   stage: test
   only:
     - master
-    - tests-runner
   script:
     - scripts/gitlab-test.sh test-coverage
   tags:
@@ -236,4 +235,3 @@ push-release:
     - scripts/gitlab-push-release.sh
   tags:
     - curl
-  allow_failure: true
